@@ -7,7 +7,7 @@ body {
 #page {
 	margin: 30px 210px 30px 210px;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 	border: 0 solid #DCDCDC;
 	box-shadow: 0 0 5px rgba(0,0,0,0.8);
 	background-color: #FFFFF0;
@@ -24,10 +24,11 @@ body {
 #chatslist {
 	float: left;
 	width: 200px;
-	height: 522px;
+	height: 562px;
 	margin: 2px 20px 0 20px;
 	background-color: #FFFFF0;
 	border-right: 1px solid #DCDCDC;
+	overflow-y: auto;
 }
 
 #plus {
@@ -59,20 +60,23 @@ body {
 .contact a:hover {
 	color: red;
 }
+
 .single.active{
 	color: red;
 }
+
 #chat {
 	margin: 20px 20px 20px 240px;
 	height: 400px;
 	background-color: #FFFFF0;
 	border-bottom: 1px solid #DCDCDC;
+	overflow-y: auto;
 }
 
 #messageAuthor {
+	width: 600px;
 	float: left;
-	margin: 10px 550px 1px 15px;
-	text-align: center;
+	margin: 10px 0px 1px 15px;
 	color: red;
 	font-size: 10px;
 	text-decoration: none;
@@ -81,9 +85,9 @@ body {
 }
 
 #messageText {
+	width: 600px;
 	float: left;
-	margin: 0px 550px 10px 15px;
-	text-align: center;
+	margin: 0px 0px 10px 15px;
 	color: black;
 	font-size: 15px;
 	text-decoration: none;
@@ -91,9 +95,13 @@ body {
 	font-family: monospace;
 }
 
+#chat #messageText img {
+	width: 30px;
+}
+
 #textbox {
 	height: 100px;
-	margin: 20px 20px 20px 240px;
+	margin: 20px 20px 0 240px;
 	background-color: #FFFFF0;
 	/*border: 1px solid #DCDCDC;*/
 }
@@ -121,18 +129,79 @@ body {
 	color: red;
 }
 
-img {
+#textbox img {
 	width: 30px;
-	margin: 30px 10px 0 50px;
+	margin: 30px 40px 0 30px;
 	-moz-transition: all 0.1s ease-out;
 	-o-transition: all 0.1s ease-out;
 	-webkit-transition: all 0.1s ease-out;
 }
 
-img:hover{
+#textbox img:hover{
 	cursor: pointer;
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-o-transform: scale(1.2);
 }
+
+#smiley {
+	height: 30px;
+	margin-left: 250px;
+}
+#smiley img {
+	width: 30px;
+	margin: 5px 0 0 5px;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+}
+
+#smiley img:hover{
+	cursor: pointer;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
+/*#smileys {
+	z-index: 1000;
+}
+
+#smileys #menu_body li ul {
+	display: none;
+}
+
+#smileys #menu_body li:hover ul, #menu_body li.over ul {
+	display: inline;
+}
+
+#smileys #menu_body {
+    background:#FFFFF0;
+}
+
+#smileys #menu_body img {
+	float: left;
+	display: inline;
+	width: 30px;
+	height: 30px;
+} 
+
+#smileys #menu_body ul li {
+    list-style-type: none;
+} 
+
+#smileys #menu_body ul li img {
+    width: 30px;
+    margin: 1px;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+} 
+
+#smileys #menu_body ul li img:hover {
+    cursor: pointer;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+} */
 
